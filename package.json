@@ -1,0 +1,16 @@
+{
+  "name": "financial-decision-record-audit-stream",
+  "version": "0.1.0",
+  "description": "FinTech audit-stream Operator: per-consumer-credit / deposit-account / payment / fraud / AML / robo-advisor / Section-1071 AI tool access events hash-chained for CFPB + OCC + FRB + ECOA + FCRA + GLBA + BSA-AML evidence.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:examples": "node src/build-examples.mjs",
+    "verify": "node src/verify.mjs examples/meridian-creditmind-2026q4-stream.ndjson",
+    "test": "npm run build:examples && npm run verify"
+  },
+  "dependencies": {
+    "ajv": "^8.17.0",
+    "ajv-formats": "^3.0.1"
+  }
+}
